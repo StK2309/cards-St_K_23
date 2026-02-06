@@ -1,5 +1,6 @@
 package suit
 
+// Suit definiert die Farben der Karten.
 type Suit int
 
 const (
