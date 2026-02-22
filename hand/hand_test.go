@@ -26,7 +26,7 @@ func ExampleNewHand() {
 	// 0
 }
 
-func ExampleAddCard() {
+func ExampleHand_AddCard() {
 	hand := NewHand()
 	hand.AddCard("King of Diamonds")
 	fmt.Println(hand.GetCards())
@@ -34,7 +34,7 @@ func ExampleAddCard() {
 	// Output: [King of Diamonds]
 }
 
-func ExampleRemoveCard() {
+func ExampleHand_RemoveCard() {
 	hand := NewHand()
 	hand.AddCard("Queen of Clubs")
 	hand.AddCard("Jack of Spades")
@@ -56,7 +56,7 @@ func ExampleRemoveCard() {
 	// [Queen of Clubs]
 }
 
-func ExampleGetCards() {
+func ExampleHand_GetCards() {
 	hand := NewHand()
 	hand.AddCard("9 of Diamonds")
 	hand.AddCard("8 of Clubs")
@@ -66,7 +66,7 @@ func ExampleGetCards() {
 	// Output: [9 of Diamonds 8 of Clubs]
 }
 
-func ExampleSize() {
+func ExampleHand_Size() {
 	hand := NewHand()
 	fmt.Println(hand.Size())
 
@@ -86,7 +86,7 @@ func ExampleSize() {
 	// 1
 }
 
-func ExampleClear() {
+func ExampleHand_Clear() {
 	hand := NewHand()
 	hand.AddCard("5 of Diamonds")
 	hand.AddCard("4 of Clubs")
